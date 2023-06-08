@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  margin: 100px auto;
+  margin: 30px auto 10px auto;
   padding: 10px;
   width: 1300px;
   background-color: transparent;
@@ -110,8 +110,8 @@ body {
 }
 .container .picture .wrap {
   position: absolute;
-  top: -30%;
-  left: 61%;
+  top: 350px;
+  left: -145px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +122,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
 }
 .container .picture .wrap .button {
   width: 140px;
@@ -151,6 +152,92 @@ body {
           transform: translateY(-7px);
 }
 
+.second-container {
+  margin: 21px auto;
+  padding: 10px;
+  width: 1300px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.second-container .exchange-block {
+  margin: 0 10px;
+  background-color: rgb(255, 236, 128);
+  width: 300px;
+  padding: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.second-container .header {
+  background-color: green;
+  color: white;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.second-container button {
+  width: 235px;
+  height: 21px;
+  border: 2px solid greenyellow;
+  border-radius: 3px;
+  background-color: green;
+  color: white;
+}
+.second-container .price {
+  margin: 0 10px;
+  background-color: rgb(255, 236, 128);
+  width: 300px;
+  padding: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.second-container .rest-amount {
+  margin: 0 10px;
+  background-color: rgb(255, 236, 128);
+  width: 300px;
+  padding: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.second-container .rest-amount h2 {
+  color: rgb(255, 123, 123);
+}
+.second-container .discount {
+  margin: 0 10px;
+  background-color: rgb(255, 236, 128);
+  width: 300px;
+  padding: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.second-container .use-discount {
+  position: absolute;
+  height: 150px;
+  width: 300px;
+  background-color: rgb(255, 123, 123);
+  border: 5ps solid rgb(255, 195, 195);
+  border-radius: 10px;
+  color: white;
+  font-size: 40px;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+}
+.second-container .use-discount:hover {
+  background-color: rgb(253, 133, 133);
+}
+
 .drop-down-list {
   cursor: pointer;
 }
@@ -167,6 +254,10 @@ body {
 
 .drop-down-list.active .description {
   display: block;
+}
+
+.not-enough-money .not-enough-money:hover {
+  background: gray !important;
 }
 
 @-webkit-keyframes drip {
